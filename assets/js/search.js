@@ -13,7 +13,9 @@ class information {
 }
 // 73 97
 let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
+
 let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "je cherche une femme");
+
 let men3 = new information('73', "Henry", "men3.jpg", "male", "25", "Warhammer", "je suis étudiant en médecine", "je cherche une femme");
 
 let men4 = new information('97', "Edouard", "men4.jpg", "male", "36", "J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard, j'ai 36 ans, je suis divorcé et j'ai 2 enfants, une fille et un garçon de 10 et 6 ans à ma charge.", "je cherche une femme");
@@ -59,3 +61,36 @@ let women10 = new information('94', 'Éléonore','women10.jpg', 'femme', '39', '
 let women11 = new information('95','Julia' ,'women11.jpg', 'femme', '40', 'Recherche', 'Films', `Je suis fan de cinéma et j'adore explorer différents genres. Sur le plan professionnel, je suis profondément impliquée dans la recherche et j'apprécie les poursuites intellectuelles.`,'homme');
 
 let women12 = new information('96','Camille' ,'women12.jpg', 'femme', '41', 'Design', 'Voyages', `Le design est mon monde, et je trouve de l'inspiration à chaque coin de rue. J'ai aussi une envie de découvrir de nouvelles destinations et de vivre différentes cultures.`,'homme');
+
+let women = [women1, women2, women3, women4, women5, women6, women7, women8, women9, women10, women11, women12]
+let men = [men1, men2, men3, men4, men5, men6, men7, men8, men9, men10, men11, men12]
+
+
+let createElement = {
+    createCard() {
+        for (let i = 0; i < women.length; i++) {
+            let card = document.createElement("div")
+            card.classList.add("card")
+            card.innerHTML = 
+            `
+            <h2>${women[i].name}</h2>
+            <img id="logo" src="assets/images/${women[i].photo}"  alt="Logo" style=max-width:230px;>
+             <ul>
+             <li>${women[i].gender}</li>
+             <li>${women[i].age}</li>
+             <li>${women[i].departement}</li>
+             <li>${women[i].interest}</li>
+             <li>${women[i].description}</li>
+             <li>${women[i].search}</li>
+             </ul>
+
+
+            `
+
+           infos.appendChild(card)
+    }
+}}
+
+infos.appendChild(createElement.createCard())
+
+            
