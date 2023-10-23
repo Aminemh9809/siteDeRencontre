@@ -12,42 +12,43 @@ class information {
     }
 }
 // 73 97
-let men1 = new information ('73', "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis en étudiant", "Je cherche une femme",);
-let men2 = new information ('97', "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 etoiles","je cherche une femme");
-let men3 = new information ('73', "men3.jpg", "male", "25", "Warhammer", "je suis en étudiant en medecine");
-let men4 = new information ('73', "men4.jpg", "male", "25","J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard j'ai 36 ans, je suis divorcé j'ai 2 enfants une fille et garçon de 10 et 6 ans à la charge",);
-let men5 = new information ('73', "");
-let men6 = new information ('73');
-let men7 = new information ('73');
-let men8 = new information ('73');
-let men9 = new information ('73');
-let men10 = new information ('73');
-let men11= new information ('73');
-let men12= new information ('73');
+let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
+let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "je cherche une femme");
+let men3 = new information('73', "Henry", "men3.jpg", "male", "25", "Warhammer", "je suis étudiant en médecine", "je cherche une femme");
+let men4 = new information('97', "Edouard", "men4.jpg", "male", "36", "J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard, j'ai 36 ans, je suis divorcé et j'ai 2 enfants, une fille et un garçon de 10 et 6 ans à ma charge.", "je cherche une femme");
+let men5 = new information('73', "John", "men5.jpg", "male", "28", "La musique, le fitness et les voyages", "Je travaille comme musicien professionnel.", "je cherche une femme");
+let men6 = new information('97', "Thomas", "men6.jpg", "male", "30", "La cuisine et la photographie", "Je suis chef de cuisine dans un restaurant renommé.", "je cherche une femme");
+let men7 = new information('73', "Samuel", "men7.jpg", "male", "22", "Les jeux vidéo, la technologie", "Je suis étudiant en informatique.", "je cherche une femme");
+let men8 = new information('73', "Lucas", "men8.jpg", "male", "29", "La peinture, la randonnée", "Je suis un artiste indépendant.", "je cherche une femme");
+let men9 = new information('97', "Daniel", "men9.jpg", "male", "31", "La philosophie, la littérature", "Je suis professeur de philosophie.", "je cherche une femme");
+let men10 = new information('73', "Robert", "men10.jpg", "male", "40", "Le jardinage, les animaux", "Je travaille comme vétérinaire.", "je cherche une femme");
+let men11 = new information('97', "Eric", "men11.jpg", "male", "27", "La danse, le théâtre", "Je suis danseur professionnel.", "je cherche une femme");
+let men12 = new information('73', "William", "men12.jpg", "male", "35", "Le bricolage, la mécanique", "Je suis ingénieur en mécanique.", "je cherche une femme");
 
 
 
 
-let women1 = new information('85', 'women1.jpg', 'femme', '30', 'Marketing', 'Randonnée', `J'adore explorer la nature et faire de longues randonnées. Dans mon temps libre, vous me trouverez souvent en train de lire un bon livre ou d'essayer de nouvelles recettes dans la cuisine.`);
 
-let women2 = new information('86', 'women2.jpg', 'femme', '31', 'Ingénierie', 'Lecture', `J'ai une passion pour la technologie et j'aime plonger dans un bon livre. Je recherche quelqu'un qui partage des intérêts similaires et qui est toujours prêt pour une conversation stimulante.`);
+let women1 = new information('85', 'women1.jpg', 'femme', '30', 'Marketing', 'Randonnée', `J'adore explorer la nature et faire de longues randonnées. Dans mon temps libre, vous me trouverez souvent en train de lire un bon livre ou d'essayer de nouvelles recettes dans la cuisine.`,'homme');
 
-let women3 = new information('87', 'women3.jpg', 'femme', '32', 'Ventes', 'Cuisine', `Cuisiner est ma thérapie, et j'adore essayer des plats de différentes cuisines. Quand je ne suis pas en cuisine, j'aime explorer de nouveaux endroits et rencontrer de nouvelles personnes.`);
+let women2 = new information('86', 'women2.jpg', 'femme', '31', 'Ingénierie', 'Lecture', `J'ai une passion pour la technologie et j'aime plonger dans un bon livre. Je recherche quelqu'un qui partage des intérêts similaires et qui est toujours prêt pour une conversation stimulante.`,'homme');
 
-let women4 = new information('88', 'women4.jpg', 'femme', '33', 'RH', 'Voyages', `Je suis une passionnée de voyages avec un amour pour la découverte de nouvelles cultures et cuisines. Que ce soit une escapade à la plage ou une randonnée aventureuse, comptez sur moi !`);
+let women3 = new information('87', 'women3.jpg', 'femme', '32', 'Ventes', 'Cuisine', `Cuisiner est ma thérapie, et j'adore essayer des plats de différentes cuisines. Quand je ne suis pas en cuisine, j'aime explorer de nouveaux endroits et rencontrer de nouvelles personnes.`,'homme');
 
-let women5 = new information('89', 'women5.jpg', 'femme', '34', 'Finance', 'Photographie', `J'ai l'œil pour le détail et j'aime capturer des moments à travers la photographie. La finance est mon travail de jour, mais la photographie est ma véritable passion.`);
+let women4 = new information('88', 'women4.jpg', 'femme', '33', 'RH', 'Voyages', `Je suis une passionnée de voyages avec un amour pour la découverte de nouvelles cultures et cuisines. Que ce soit une escapade à la plage ou une randonnée aventureuse, comptez sur moi !`,'homme');
 
-let women6 = new information('90', 'women6.jpg', 'femme', '35', 'TI', 'Musique', `La musique est ma vie, et j'aime jouer différents instruments. Je suis aussi un geek de la technologie et j'adore rester à jour avec les dernières tendances de l'industrie.`);
+let women5 = new information('89', 'women5.jpg', 'femme', '34', 'Finance', 'Photographie', `J'ai l'œil pour le détail et j'aime capturer des moments à travers la photographie. La finance est mon travail de jour, mais la photographie est ma véritable passion.`,'homme');
 
-let women7 = new information('91', 'women7.jpg', 'femme', '36', 'Opérations', 'Art', `La créativité est ma force, et je l'exprime à travers diverses formes d'art. Je suis aussi adepte du fitness et je crois en le maintien d'un mode de vie sain et équilibré.`);
+let women6 = new information('90', 'women6.jpg', 'femme', '35', 'TI', 'Musique', `La musique est ma vie, et j'aime jouer différents instruments. Je suis aussi un geek de la technologie et j'adore rester à jour avec les dernières tendances de l'industrie.`,'homme');
 
-let women8 = new information('92', 'women8.jpg', 'femme', '37', 'Gestion de produit', 'Danse', `La danse est mon moyen de déstresser, et j'apprécie diverses formes de danse. Dans ma vie professionnelle, je prospère dans l'innovation de produits et la résolution de problèmes.`);
+let women7 = new information('91', 'women7.jpg', 'femme', '36', 'Opérations', 'Art', `La créativité est ma force, et je l'exprime à travers diverses formes d'art. Je suis aussi adepte du fitness et je crois en le maintien d'un mode de vie sain et équilibré.`,'homme');
 
-let women9 = new information('93', 'women9.jpg', 'femme', '38', 'Support client', 'Jeux vidéo', `Je suis une joueuse dans l'âme et j'adore me plonger dans des mondes virtuels. Quand je ne joue pas, je suis dévouée à fournir un support client de premier ordre.`);
+let women8 = new information('92', 'women8.jpg', 'femme', '37', 'Gestion de produit', 'Danse', `La danse est mon moyen de déstresser, et j'apprécie diverses formes de danse. Dans ma vie professionnelle, je prospère dans l'innovation de produits et la résolution de problèmes.`,'homme');
 
-let women10 = new information('94', 'women10.jpg', 'femme', '39', 'Juridique', 'Sports', `J'ai une passion pour le sport, tant pour jouer que pour regarder. Dans ma vie professionnelle, je m'engage à faire respecter la justice et à garantir la conformité légale.`);
+let women9 = new information('93', 'women9.jpg', 'femme', '38', 'Support client', 'Jeux vidéo', `Je suis une joueuse dans l'âme et j'adore me plonger dans des mondes virtuels. Quand je ne joue pas, je suis dévouée à fournir un support client de premier ordre.`,'homme');
 
-let women11 = new information('95', 'women11.jpg', 'femme', '40', 'Recherche', 'Films', `Je suis fan de cinéma et j'adore explorer différents genres. Sur le plan professionnel, je suis profondément impliquée dans la recherche et j'apprécie les poursuites intellectuelles.`);
+let women10 = new information('94', 'women10.jpg', 'femme', '39', 'Juridique', 'Sports', `J'ai une passion pour le sport, tant pour jouer que pour regarder. Dans ma vie professionnelle, je m'engage à faire respecter la justice et à garantir la conformité légale.`,'homme');
 
-let women12 = new information('96', 'women12.jpg', 'femme', '41', 'Design', 'Voyages', `Le design est mon monde, et je trouve de l'inspiration à chaque coin de rue. J'ai aussi une envie de découvrir de nouvelles destinations et de vivre différentes cultures.`);
+let women11 = new information('95', 'women11.jpg', 'femme', '40', 'Recherche', 'Films', `Je suis fan de cinéma et j'adore explorer différents genres. Sur le plan professionnel, je suis profondément impliquée dans la recherche et j'apprécie les poursuites intellectuelles.`,'homme');
+
+let women12 = new information('96', 'women12.jpg', 'femme', '41', 'Design', 'Voyages', `Le design est mon monde, et je trouve de l'inspiration à chaque coin de rue. J'ai aussi une envie de découvrir de nouvelles destinations et de vivre différentes cultures.`,'homme');
