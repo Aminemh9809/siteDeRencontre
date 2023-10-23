@@ -1,6 +1,7 @@
 class information {
     constructor(id,photo,gender,age,department,interest,description, search,){
         this.id = id;
+        this.name = names;
         this.photo = photo;
         this.gender = gender;
         this.age = age;
@@ -14,8 +15,8 @@ class information {
 let men1 = new information ('73', "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis en étudiant", "Je cherche une femme",);
 let men2 = new information ('97', "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 etoiles","je cherche une femme");
 let men3 = new information ('73', "men3.jpg", "male", "25", "Warhammer", "je suis en étudiant en medecine");
-let men4 = new information ('73', );
-let men5 = new information ('73');
+let men4 = new information ('73', "men4.jpg", "male", "25","J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard j'ai 36 ans, je suis divorcé j'ai 2 enfants une fille et garçon de 10 et 6 ans à la charge",);
+let men5 = new information ('73', "");
 let men6 = new information ('73');
 let men7 = new information ('73');
 let men8 = new information ('73');
