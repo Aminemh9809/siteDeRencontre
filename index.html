@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dating Website</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-
     <header>
-        <h1>Welcome to our Dating Site</h1>
+        <h1 class="text-center">Welcome to the Dating Website</h1>
     </header>
-    <main>
-        <section class="profile">
-            <img src="profile-picture.jpg" alt="Profile Picture">
-            <h2>John Doe</h2>
-            <p>Age: 30</p>
-            <p>Location: New York</p>
-            <p>Interests: Hiking, Reading</p>
-        </section>
-
-        <section class="profile">
-            <img src="profile-picture.jpg" alt="Profile Picture">
-            <h2>Jane Doe</h2>
-            <p>Age: 28</p>
-            <p>Location: Los Angeles</p>
-            <p>Interests: Cooking, Traveling</p>
-        </section>
-
-        <!-- Add more profiles as needed -->
-    </main>
-
-    <footer>
+    <div class="container">
+        <form action="" class="mt-4">
+            <h2 class="display-4 text-center">Create an Account</h2>
+            <!-- UserName -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <!-- Check 18 or older -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="check18" id="check18" required>
+                <label class="form-check-label" for="check18">I am 18 years or older</label>
+            </div>
+            <!-- Check CGU -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="CGU" id="CGU" required>
+                <label class="form-check-label" for="CGU">I accept the Terms and Conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+    </div>
+    <footer class="text-center mt-4">
         <p>&copy; 2023 Dating Website</p>
     </footer>
-
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
