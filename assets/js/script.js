@@ -26,7 +26,6 @@ let men11 = new information('97', "Eric", "men11.jpg", "male", "27", "La danse, 
 let men12 = new information('73', "William", "men12.jpg", "male", "35", "Le bricolage, la mécanique", "Je suis ingénieur en mécanique.", "je cherche une femme");
 
 
-
 let women1 = new information('85', 'Emma','women1.jpg', 'femme', '30', 'Marketing', 'Randonnée', `J'adore explorer la nature et faire de longues randonnées. Dans mon temps libre, vous me trouverez souvent en train de lire un bon livre ou d'essayer de nouvelles recettes dans la cuisine.`,'homme');
 
 let women2 = new information('86','Sophie', 'women2.jpg', 'femme', '31', 'Ingénierie', 'Lecture', `J'ai une passion pour la technologie et j'aime plonger dans un bon livre. Je recherche quelqu'un qui partage des intérêts similaires et qui est toujours prêt pour une conversation stimulante.`,'homme');
@@ -50,3 +49,10 @@ let women10 = new information('94', 'Éléonore','women10.jpg', 'femme', '39', '
 let women11 = new information('95','Julia' ,'women11.jpg', 'femme', '40', 'Recherche', 'Films', `Je suis fan de cinéma et j'adore explorer différents genres. Sur le plan professionnel, je suis profondément impliquée dans la recherche et j'apprécie les poursuites intellectuelles.`,'homme');
 
 let women12 = new information('96','Camille' ,'women12.jpg', 'femme', '41', 'Design', 'Voyages', `Le design est mon monde, et je trouve de l'inspiration à chaque coin de rue. J'ai aussi une envie de découvrir de nouvelles destinations et de vivre différentes cultures.`,'homme');
+
+let men = [
+    men1, men2, men3, men4, men5, men6, men7, men8, men9, men10, men11, men12
+]
+let women = [
+    women1, women2, women3, women4, women5, women6, women7, women8, women9, women10, women11, women12
+]
