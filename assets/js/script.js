@@ -1,7 +1,7 @@
 class information {
-    constructor(id,photo,gender,age,department,interest,description, search,){
+    constructor(id, name, photo,gender,age,department,interest,description, search,){
         this.id = id;
-        this.name = names;
+        this.name = name;
         this.photo = photo;
         this.gender = gender;
         this.age = age;
@@ -12,18 +12,19 @@ class information {
     }
 }
 // 73 97
-let men1 = new information ('73', "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis en étudiant", "Je cherche une femme",);
-let men2 = new information ('97', "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 etoiles","je cherche une femme");
-let men3 = new information ('73', "men3.jpg", "male", "25", "Warhammer", "je suis en étudiant en medecine");
-let men4 = new information ('73', "men4.jpg", "male", "25","J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard j'ai 36 ans, je suis divorcé j'ai 2 enfants une fille et garçon de 10 et 6 ans à la charge",);
-let men5 = new information ('73', "");
-let men6 = new information ('73');
-let men7 = new information ('73');
-let men8 = new information ('73');
-let men9 = new information ('73');
-let men10 = new information ('73');
-let men11= new information ('73');
-let men12= new information ('73');
+let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
+let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "je cherche une femme");
+let men3 = new information('73', "Henry", "men3.jpg", "male", "25", "Warhammer", "je suis étudiant en médecine", "je cherche une femme");
+let men4 = new information('97', "Edouard", "men4.jpg", "male", "36", "J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard, j'ai 36 ans, je suis divorcé et j'ai 2 enfants, une fille et un garçon de 10 et 6 ans à ma charge.", "je cherche une femme");
+let men5 = new information('73', "John", "men5.jpg", "male", "28", "La musique, le fitness et les voyages", "Je travaille comme musicien professionnel.", "je cherche une femme");
+let men6 = new information('97', "Thomas", "men6.jpg", "male", "30", "La cuisine et la photographie", "Je suis chef de cuisine dans un restaurant renommé.", "je cherche une femme");
+let men7 = new information('73', "Samuel", "men7.jpg", "male", "22", "Les jeux vidéo, la technologie", "Je suis étudiant en informatique.", "je cherche une femme");
+let men8 = new information('73', "Lucas", "men8.jpg", "male", "29", "La peinture, la randonnée", "Je suis un artiste indépendant.", "je cherche une femme");
+let men9 = new information('97', "Daniel", "men9.jpg", "male", "31", "La philosophie, la littérature", "Je suis professeur de philosophie.", "je cherche une femme");
+let men10 = new information('73', "Robert", "men10.jpg", "male", "40", "Le jardinage, les animaux", "Je travaille comme vétérinaire.", "je cherche une femme");
+let men11 = new information('97', "Eric", "men11.jpg", "male", "27", "La danse, le théâtre", "Je suis danseur professionnel.", "je cherche une femme");
+let men12 = new information('73', "William", "men12.jpg", "male", "35", "Le bricolage, la mécanique", "Je suis ingénieur en mécanique.", "je cherche une femme");
+
 
 
 let women1 = new information('85', 'Emma','women1.jpg', 'femme', '30', 'Marketing', 'Randonnée', `J'adore explorer la nature et faire de longues randonnées. Dans mon temps libre, vous me trouverez souvent en train de lire un bon livre ou d'essayer de nouvelles recettes dans la cuisine.`,'homme');

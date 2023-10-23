@@ -1,0 +1,34 @@
+/* * {
+    padding: 0;
+    margin : 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    width: 170%;
+    height: 60vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vh;
+}
+
+input{
+    margin: 1.5vh;
+    height: 3vh;
+    width: 120%;
+} */
