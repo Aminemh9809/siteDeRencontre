@@ -1,5 +1,9 @@
 class information {
+<<<<<<< HEAD
     constructor(id,photo,gender,age,department,interest,description, search,){
+=======
+    constructor(id,photo,gender,age,department,interest,description,search){
+>>>>>>> 36ccfb36f673c77dfd8eb4d05faae316bbbc2ead
         this.id = id;
         this.photo = photo;
         this.gender = gender;
@@ -7,7 +11,11 @@ class information {
         this.department = department;
         this.interest = interest;
         this.description = description;
+<<<<<<< HEAD
         this.search = 0;
+=======
+        this.search = search;
+>>>>>>> 36ccfb36f673c77dfd8eb4d05faae316bbbc2ead
     }
 }
 // 73 97
