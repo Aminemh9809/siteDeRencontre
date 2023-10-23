@@ -12,3 +12,20 @@ class information {
 // 73 97
 let men1 = new information ('73',);
 let men2
+
+
+
+
+
+let women1 = new information ('85');
+let women2 = new information ('86');
+let women3 = new information ('87');
+let women4 = new information ('88');
+let women5 = new information ('89');
+let women6 = new information ('90');
+let women7 = new information ('91');
+let women8 = new information ('92');
+let women9 = new information ('93');
+let women10 = new information ('94');
+let women11 = new information ('95');
+let women12 = new information ('96');
