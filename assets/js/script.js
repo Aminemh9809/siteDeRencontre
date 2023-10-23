@@ -1,5 +1,5 @@
 class information {
-    constructor(id,photo,gender,age,department,interest,description){
+    constructor(id,photo,gender,age,department,interest,description,search){
         this.id = id;
         this.photo = photo;
         this.gender = gender;
@@ -7,6 +7,7 @@ class information {
         this.department = department;
         this.interest = interest;
         this.description = description;
+        this.search = search;
     }
 }
 // 73 97
