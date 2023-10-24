@@ -369,7 +369,7 @@ function filter() {
     <li><strong>Age:</strong> ${men[i].age}</li>
     <li><strong>Département:</strong> ${men[i].department}</li>
     </ul>
-    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID">Details</button>
+    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID" href="profil.html" >Details</button>
 `;
 
             // Append the card to the container
@@ -425,7 +425,7 @@ function filter() {
     <li><strong>Age:</strong> ${men[i].age}</li>
     <li><strong>Département:</strong> ${men[i].department}</li>
     </ul>
-    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID">Details</button>
+    <a href = "profil.html" <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID" >Details</button> </a>
 `;
             // Append the card to the container
             let meninfos = document.getElementById("meninfos");
@@ -456,7 +456,7 @@ function filter() {
     <li><strong>Age:</strong> ${women[i].age}</li>
     <li><strong>Département:</strong> ${women[i].department}</li>
     </ul>
-    <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
+    <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID" href="profil.html" >Details</button>
 
 `;
             let womenInfos = document.getElementById("womeninfos");
@@ -474,3 +474,13 @@ let genderDiv = document.getElementById("genderFilter");
 genderDiv.addEventListener("change", function () {
     filter();
 })
+
+document.cookie = id= `${id};`
+document.cookie = name= `${name};`
+document.cookie =  gender= `${gender};`
+document.cookie = photo= `${photo};`
+document.cookie = age= `${age};`
+document.cookie = department= `${department};`
+document.cookie =  interest= `${interest};`
+document.cookie =  description= `${description};`
+document.cookie =  age= `${age};`
