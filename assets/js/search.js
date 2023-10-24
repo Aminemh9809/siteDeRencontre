@@ -74,14 +74,11 @@ let createElement = {
             card.innerHTML =
                 `
                 <h2 class="mb-3">${men[i].name}</h2>
-                <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle"> <!-- Added Bootstrap classes -->
+                <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
                 <ul class="list-unstyled">
                     <li><strong>Genre:</strong> ${men[i].gender}</li>
                     <li><strong>Age:</strong> ${men[i].age}</li>
                     <li><strong>Département:</strong> ${men[i].department}</li>
-                    <li><strong>Intérêt:</strong> ${men[i].interest}</li>
-                    <li><strong>Description:</strong> ${men[i].description}</li>
-                    <li><strong>Je cherche des:</strong> ${men[i].search}</li>
                 </ul>
             `;
 
@@ -101,7 +98,4 @@ let createElement = {
 };
 
 createElement.createCard(); // Call the function to create the cards
-
-
-
 
