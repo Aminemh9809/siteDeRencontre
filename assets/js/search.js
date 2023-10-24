@@ -12,11 +12,7 @@ class information {
     }
 }
 // 73 97
-<<<<<<< HEAD
-let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, <br> le mensonge et les caméras <br> et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
-=======
 let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "femmes");
->>>>>>> a2fa7f1789c008dac2f977271db22f42949000cc
 
 let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "43", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "femmes");
 
@@ -78,14 +74,11 @@ let createElement = {
             card.innerHTML =
                 `
                 <h2 class="mb-3">${men[i].name}</h2>
-                <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle"> <!-- Added Bootstrap classes -->
+                <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
                 <ul class="list-unstyled">
                     <li><strong>Genre:</strong> ${men[i].gender}</li>
                     <li><strong>Age:</strong> ${men[i].age}</li>
                     <li><strong>Département:</strong> ${men[i].department}</li>
-                    <li><strong>Intérêt:</strong> ${men[i].interest}</li>
-                    <li><strong>Description:</strong> ${men[i].description}</li>
-                    <li><strong>Je cherche des:</strong> ${men[i].search}</li>
                 </ul>
             `;
 
@@ -105,7 +98,4 @@ let createElement = {
 };
 
 createElement.createCard(); // Call the function to create the cards
-
-
-
 
