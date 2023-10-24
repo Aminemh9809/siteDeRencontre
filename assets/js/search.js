@@ -351,67 +351,126 @@ let men = [
     men12,
 ];
 
-// Assuming 'men' is an array of objects containing your data
-for (let i = 0; i < men.length; i++) {
-    let card = document.createElement("div");
-    card.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
-    card.innerHTML = `
+
+function filter() {
+    genderFilter = document.getElementById('genderFilter').value;
+
+    if (genderFilter ==="all"){
+        meninfos.innerHTML = "";
+        womeninfos.innerHTML = "";
+        for (let i = 0; i < men.length; i++) {
+            let card = document.createElement("div");
+            card.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            card.innerHTML = `
     <h2 class="mb-3">${men[i].name}</h2>
     <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
     <ul class="list-unstyled">
-      <li><strong>Genre:</strong> ${men[i].gender}</li>
-      <li><strong>Age:</strong> ${men[i].age}</li>
-      <li><strong>Département:</strong> ${men[i].department}</li>
+    <li><strong>Genre:</strong> ${men[i].gender}</li>
+    <li><strong>Age:</strong> ${men[i].age}</li>
+    <li><strong>Département:</strong> ${men[i].department}</li>
     </ul>
     <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID">Details</button>
+`;
 
-  `;
-
-
-
-
-
+            // Append the card to the container
+            let meninfos = document.getElementById("meninfos");
+            meninfos.appendChild(card);
 
 
-    // women info
+            // Add a click event listener to the button inside this card
+            let button = document.getElementById(men[i].id);
 
+            button.addEventListener("click", function () {
+                console.log(men[i].id);
+            });
+        }
+        
+                // women info
 
+                for (let i = 0; i < women.length; i++) {
+                    let womenCard = document.createElement("div");
+                    womenCard.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+                    womenCard.innerHTML = `
+            <h2 class="mb-3">${women[i].name}</h2>
+            <img src="assets/images/${women[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
+            <ul class="list-unstyled">
+            <li><strong>Genre:</strong> ${women[i].gender}</li>
+            <li><strong>Age:</strong> ${women[i].age}</li>
+            <li><strong>Département:</strong> ${women[i].department}</li>
+            </ul>
+            <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
+        
+        `;
+                    let womenInfos = document.getElementById("womeninfos");
+                    womenInfos.appendChild(womenCard);
+                    let womenButton = document.getElementById(women[i].id);
+        
+                    womenButton.addEventListener("click", function () {
+                        console.log(women[i].id);
+                    });
+                }
+    }
 
+    else if (genderFilter === 'male') {
+        meninfos.innerHTML = "";
+        womeninfos.innerHTML = "";
+        for (let i = 0; i < men.length; i++) {
+            let card = document.createElement("div");
+            card.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            card.innerHTML = `
+    <h2 class="mb-3">${men[i].name}</h2>
+    <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
+    <ul class="list-unstyled">
+    <li><strong>Genre:</strong> ${men[i].gender}</li>
+    <li><strong>Age:</strong> ${men[i].age}</li>
+    <li><strong>Département:</strong> ${men[i].department}</li>
+    </ul>
+    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID">Details</button>
+`;
+            // Append the card to the container
+            let meninfos = document.getElementById("meninfos");
+            meninfos.appendChild(card);
 
+            // Add a click event listener to the button inside this card
+            let button = document.getElementById(men[i].id);
 
-    // Append the card to the container
-    let meninfos = document.getElementById("meninfos");
-    meninfos.appendChild(card);
+            button.addEventListener("click", function () {
+                console.log(men[i].id);
+            });
+        }
 
+    } else if (genderFilter === 'female' ) {
+        meninfos.innerHTML = "";
+        womeninfos.innerHTML = "";
 
-    // Add a click event listener to the button inside this card
-    let button = document.getElementById(men[i].id);
+        // women info
 
-    button.addEventListener("click", function () {
-        console.log(men[i].id);
-    });
-}
-for (let i = 0; i < women.length; i++) {
-    let womenCard = document.createElement("div");
-    womenCard.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
-    womenCard.innerHTML = `
+        for (let i = 0; i < women.length; i++) {
+            let womenCard = document.createElement("div");
+            womenCard.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            womenCard.innerHTML = `
     <h2 class="mb-3">${women[i].name}</h2>
     <img src="assets/images/${women[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
     <ul class="list-unstyled">
-      <li><strong>Genre:</strong> ${women[i].gender}</li>
-      <li><strong>Age:</strong> ${women[i].age}</li>
-      <li><strong>Département:</strong> ${women[i].department}</li>
+    <li><strong>Genre:</strong> ${women[i].gender}</li>
+    <li><strong>Age:</strong> ${women[i].age}</li>
+    <li><strong>Département:</strong> ${women[i].department}</li>
     </ul>
     <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
 
+`;
+            let womenInfos = document.getElementById("womeninfos");
+            womenInfos.appendChild(womenCard);
+            let womenButton = document.getElementById(women[i].id);
 
-    
-  `;
-  let womenInfos = document.getElementById("womeninfos");
-womenInfos.appendChild(womenCard);
-let womenButton = document.getElementById(women[i].id);
+            womenButton.addEventListener("click", function () {
+                console.log(women[i].id);
+            });
+        }
+    } 
 
-womenButton.addEventListener("click", function () {
-        console.log(women[i].id);
-});
 }
+let genderDiv = document.getElementById("genderFilter");
+genderDiv.addEventListener("change", function () {
+    filter();
+})
