@@ -475,12 +475,12 @@ genderDiv.addEventListener("change", function () {
     filter();
 })
 
-document.cookie = id= `${id};`
-document.cookie = name= `${name};`
-document.cookie =  gender= `${gender};`
-document.cookie = photo= `${photo};`
-document.cookie = age= `${age};`
-document.cookie = department= `${department};`
-document.cookie =  interest= `${interest};`
-document.cookie =  description= `${description};`
-document.cookie =  age= `${age};`
+// document.cookie = id= `${id};`
+// document.cookie = name= `${name};`
+// document.cookie =  gender= `${gender};`
+// document.cookie = photo= `${photo};`
+// document.cookie = age= `${age};`
+// document.cookie = department= `${department};`
+// document.cookie =  interest= `${interest};`
+// document.cookie =  description= `${description};`
+// document.cookie =  age= `${age};`
