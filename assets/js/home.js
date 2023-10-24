@@ -5,7 +5,6 @@ let button = document.getElementById("button");
 
 
 function checkedd(){ 
-    console.log("ok");
     if(cgu.checked && adult.checked){
         button.disabled = false;
     }else{
@@ -14,3 +13,28 @@ function checkedd(){
 }
 cgu.addEventListener("input", checkedd); // Listen for changes in the CGU checkbox
 adult.addEventListener("input", checkedd); // Listen for changes in the 18 or older checkbox
+
+function getCookie (cgu){
+    const cookie = document.cookie.split(";");
+    const value = cookie .find(cookie => cookie.startsWith(cgu)) ?.split ("=")[1]
+    if(value === undefined){
+        return null;
+        
+    }
+    return decodeURI(value)
+}
+
+function getCookieA (adult){
+    const cookie = document.cookie.split(";");
+    const value = cookie .find(cookie => cookie.startsWith(adult)) ?.split ("=")[1]
+    if(value === undefined){
+        return null;
+        
+    }
+    return decodeURI(value)
+}
+
+
+
+
+
