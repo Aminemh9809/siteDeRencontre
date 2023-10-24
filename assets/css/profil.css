@@ -13,13 +13,12 @@
 }
 
 .card{
-    background-color: #F6C1FB;
     border-radius: 10px;
     margin: 2vh;
 }
 
 img{
-    
+    height: 15vh;
 }
 
 li{

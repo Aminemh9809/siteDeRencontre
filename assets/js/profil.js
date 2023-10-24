@@ -12,33 +12,29 @@ class information {
     }
 }
 // 73 97
-<<<<<<< HEAD
-let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, <br> le mensonge et les caméras <br> et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
-=======
 let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "femmes");
->>>>>>> a2fa7f1789c008dac2f977271db22f42949000cc
 
-let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "43", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "femmes");
+let men2 = new information('74', "Ricardo", "men2.jpg", "male", "33", "43", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "femmes");
 
-let men3 = new information('73', "Henry", "men3.jpg", "male", "25", "51", "Warhammer", "je suis étudiant en médecine", "femmes");
+let men3 = new information('76', "Henry", "men3.jpg", "male", "25", "51", "Warhammer", "je suis étudiant en médecine", "femmes");
 
-let men4 = new information('97', "Edouard", "men4.jpg", "male", "36", "78", "J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard, j'ai 36 ans, je suis divorcé et j'ai 2 enfants, une fille et un garçon de 10 et 6 ans à ma charge.", "femmes");
+let men4 = new information('79', "Edouard", "men4.jpg", "male", "36", "78", "J'aime passer du temps avec mes enfants et la randonnée", "Je m'appelle Edouard, j'ai 36 ans, je suis divorcé et j'ai 2 enfants, une fille et un garçon de 10 et 6 ans à ma charge.", "femmes");
 
-let men5 = new information('73', "John", "men5.jpg", "male", "28", "69", "La musique, le fitness et les voyages", "Je travaille comme musicien professionnel.", "femmes");
+let men5 = new information('97', "John", "men5.jpg", "male", "28", "69", "La musique, le fitness et les voyages", "Je travaille comme musicien professionnel.", "femmes");
 
-let men6 = new information('97', "Thomas", "men6.jpg", "male", "30", "16", "La cuisine et la photographie", "Je suis chef de cuisine dans un restaurant renommé.", "femmes");
+let men6 = new information('72', "Thomas", "men6.jpg", "male", "30", "16", "La cuisine et la photographie", "Je suis chef de cuisine dans un restaurant renommé.", "femmes");
 
-let men7 = new information('73', "Samuel", "men7.jpg", "male", "22", "36", "Les jeux vidéo, la technologie", "Je suis étudiant en informatique.", "femmes");
+let men7 = new information('80', "Samuel", "men7.jpg", "male", "22", "36", "Les jeux vidéo, la technologie", "Je suis étudiant en informatique.", "femmes");
 
-let men8 = new information('73', "Lucas", "men8.jpg", "male", "29", "77", "La peinture, la randonnée", "Je suis un artiste indépendant.", "femmes");
+let men8 = new information('81', "Lucas", "men8.jpg", "male", "29", "77", "La peinture, la randonnée", "Je suis un artiste indépendant.", "femmes");
 
-let men9 = new information('97', "Daniel", "men9.jpg", "male", "31", "40", "La philosophie, la littérature", "Je suis professeur de philosophie.", "femmes");
+let men9 = new information('82', "Daniel", "men9.jpg", "male", "31", "40", "La philosophie, la littérature", "Je suis professeur de philosophie.", "femmes");
 
-let men10 = new information('73', "Robert", "men10.jpg", "male", "40", "93", "Le jardinage, les animaux", "Je travaille comme vétérinaire.", "femmes");
+let men10 = new information('74', "Robert", "men10.jpg", "male", "40", "93", "Le jardinage, les animaux", "Je travaille comme vétérinaire.", "femmes");
 
-let men11 = new information('97', "Eric", "men11.jpg", "male", "27", "76", "La danse, le théâtre", "Je suis danseur professionnel.", "femmes");
+let men11 = new information('75', "Eric", "men11.jpg", "male", "27", "76", "La danse, le théâtre", "Je suis danseur professionnel.", "femmes");
 
-let men12 = new information('73', "William", "men12.jpg", "male", "35", "76", "Le bricolage, la mécanique", "Je suis ingénieur en mécanique.", "femmes");
+let men12 = new information('77', "William", "men12.jpg", "male", "35", "76", "Le bricolage, la mécanique", "Je suis ingénieur en mécanique.", "femmes");
 
 
 
@@ -74,7 +70,7 @@ let createElement = {
     createCard() {
         for (let i = 0; i < men.length; i++) {
             let card = document.createElement("div")
-            card.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            card.classList.add("card")
             card.innerHTML =
                 `
                 <h2 class="mb-3">${men[i].name}</h2>
@@ -89,15 +85,7 @@ let createElement = {
                 </ul>
             `;
 
-            // Applying custom styles
-            card.style.border = "1px solid #ccc";
-            card.style.borderRadius = "10px";
-            card.style.backgroundColor = "#fff";
-            card.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.1)";
-            card.style.transformOrigin = "center";
-            card.style.transition = "transform 0.3s";
 
-            // Assuming 'infos' is the container where you want to append the cards
             let infos = document.getElementById('infos');
             infos.appendChild(card);
         }
