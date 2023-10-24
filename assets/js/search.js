@@ -66,11 +66,9 @@ let women = [women1, women2, women3, women4, women5, women6, women7, women8, wom
 let men = [men1, men2, men3, men4, men5, men6, men7, men8, men9, men10, men11, men12]
 
 
-let createElement = {
-    createCard() {
         for (let i = 0; i < men.length; i++) {
             let card = document.createElement("div")
-            card.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            card.classList.add("mb-5");
             card.innerHTML =
                 `
                 <h2 class="mb-3">${men[i].name}</h2>
@@ -82,20 +80,45 @@ let createElement = {
                 </ul>
             `;
 
-            // Applying custom styles
-            card.style.border = "1px solid #ccc";
-            card.style.borderRadius = "10px";
-            card.style.backgroundColor = "#fff";
-            card.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.1)";
-            card.style.transformOrigin = "center";
-            card.style.transition = "transform 0.3s";
+            // Assuming 'infos' is the container where you want to append the cards
+            let menInfos = document.getElementById('meninfos');
+            menInfos.appendChild(card);
+        };
+
+
+
+
+        // women
+
+
+
+        
+        for (let i = 0; i < women.length; i++) {
+            let cardWomen = document.createElement("div")
+            cardWomen.classList.add("mb-5");
+            cardWomen.innerHTML =
+                `
+                <h2 class="mb-3">${women[i].name}</h2>
+                <img src="assets/images/${women[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
+                <ul class="list-unstyled">
+                    <li><strong>Genre:</strong> ${women[i].gender}</li>
+                    <li><strong>Age:</strong> ${women[i].age}</li>
+                    <li><strong>Département:</strong> ${women[i].department}</li>
+                </ul>
+            `;
 
             // Assuming 'infos' is the container where you want to append the cards
-            let infos = document.getElementById('infos');
-            infos.appendChild(card);
-        }
-    }
-};
+            let womenInfos = document.getElementById('womeninfos');
+            womenInfos.appendChild(cardWomen);
+        };
 
-createElement.createCard(); // Call the function to create the cards
 
+
+        // Filter algorithm
+
+        let menInfos = document.getElementById('meninfos');
+        let womenInfos = document.getElementById('womeninfos');
+
+function checkGender(){
+    
+}
