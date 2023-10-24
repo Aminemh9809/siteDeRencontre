@@ -8,4 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+}
+
+.card{
+    background-color: #F6C1FB;
+    border-radius: 10px;
+    margin: 2vh;
+}
+
+img{
+    
+}
+
+li{
+    list-style: none ;
 }

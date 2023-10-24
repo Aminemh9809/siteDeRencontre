@@ -12,7 +12,7 @@ class information {
     }
 }
 // 73 97
-let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, le mensonge et les caméras et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
+let men1 = new information('73', "Morcan", "men1.jpg", "male", "19", "52", "Informatique, manipulation de masse, <br> le mensonge et les caméras <br> et mes cours de français", "je suis étudiant en informatique", "Je cherche une femme");
 
 let men2 = new information('97', "Ricardo", "men2.jpg", "male", "33", "43", "Le cinéma et les chats", "chef restaurateur et cuisinier dans un restaurant 2 étoiles", "je cherche une femme");
 
