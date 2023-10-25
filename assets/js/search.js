@@ -355,7 +355,7 @@ let men = [
 function filter() {
     genderFilter = document.getElementById('genderFilter').value;
 
-    if (genderFilter ==="all"){
+    if (genderFilter === "all") {
         meninfos.innerHTML = "";
         womeninfos.innerHTML = "";
         for (let i = 0; i < men.length; i++) {
@@ -384,13 +384,13 @@ function filter() {
                 console.log(men[i].id);
             });
         }
-        
-                // women info
 
-                for (let i = 0; i < women.length; i++) {
-                    let womenCard = document.createElement("div");
-                    womenCard.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
-                    womenCard.innerHTML = `
+        // women info
+
+        for (let i = 0; i < women.length; i++) {
+            let womenCard = document.createElement("div");
+            womenCard.classList.add("card", "m-3", "p-3"); // Added Bootstrap classes
+            womenCard.innerHTML = `
             <h2 class="mb-3">${women[i].name}</h2>
             <img src="assets/images/${women[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle">
             <ul class="list-unstyled">
@@ -401,14 +401,14 @@ function filter() {
             <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
         
         `;
-                    let womenInfos = document.getElementById("womeninfos");
-                    womenInfos.appendChild(womenCard);
-                    let womenButton = document.getElementById(women[i].id);
-        
-                    womenButton.addEventListener("click", function () {
-                        console.log(women[i].id);
-                    });
-                }
+            let womenInfos = document.getElementById("womeninfos");
+            womenInfos.appendChild(womenCard);
+            let womenButton = document.getElementById(women[i].id);
+
+            womenButton.addEventListener("click", function () {
+                console.log(women[i].id);
+            });
+        }
     }
 
     else if (genderFilter === 'male') {
@@ -425,21 +425,23 @@ function filter() {
     <li><strong>Age:</strong> ${men[i].age}</li>
     <li><strong>Département:</strong> ${men[i].department}</li>
     </ul>
-    <a href = "profil.html" <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID" >Details</button> </a>
+    <button onclick="redirectToDetailsPage(${i})" class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID" >Details</button>
 `;
+
+
             // Append the card to the container
             let meninfos = document.getElementById("meninfos");
             meninfos.appendChild(card);
 
             // Add a click event listener to the button inside this card
-            let button = document.getElementById(men[i].id);
+            // let button = document.getElementById(men[i].id);
 
-            button.addEventListener("click", function () {
-                console.log(men[i].id);
-            });
+            // button.addEventListener("click", function () {
+            //     console.log(men[i].id);
+            // });
         }
 
-    } else if (genderFilter === 'female' ) {
+    } else if (genderFilter === 'female') {
         meninfos.innerHTML = "";
         womeninfos.innerHTML = "";
 
@@ -456,7 +458,7 @@ function filter() {
     <li><strong>Age:</strong> ${women[i].age}</li>
     <li><strong>Département:</strong> ${women[i].department}</li>
     </ul>
-    <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID" href="profil.html" >Details</button>
+    <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
 
 `;
             let womenInfos = document.getElementById("womeninfos");
@@ -467,14 +469,16 @@ function filter() {
                 console.log(women[i].id);
             });
         }
-    } 
+    }
 
 }
+
 let genderDiv = document.getElementById("genderFilter");
 genderDiv.addEventListener("change", function () {
     filter();
 })
 
+<<<<<<< HEAD
 // document.cookie = id= `${id};`
 // document.cookie = name= `${name};`
 // document.cookie =  gender= `${gender};`
@@ -505,3 +509,14 @@ genderDiv.addEventListener("change", function () {
 //     }
 //     return decodeURI(value)
 // }
+=======
+
+function redirectToDetailsPage(index) {
+    const id = index.id;
+    window.location.href = `profil.html?index=${index}`;
+}
+// function redirectToDetailsFemale(indexF) {
+//     const id = indexF.id;
+//     window.location.href = `profil.html?index=${indexF}`;
+// }
+>>>>>>> 4b43bbd9a20857955ebda0fa6f99e52eae841548
