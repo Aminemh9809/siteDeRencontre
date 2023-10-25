@@ -369,7 +369,7 @@ function filter() {
     <li><strong>Age:</strong> ${men[i].age}</li>
     <li><strong>Département:</strong> ${men[i].department}</li>
     </ul>
-    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID">Details</button>
+    <button class="btn btn-primary" id="${men[i].id}" data-customid="yourCustomID" href="profil.html" >Details</button>
 `;
 
             // Append the card to the container
@@ -458,7 +458,8 @@ function filter() {
     <li><strong>Age:</strong> ${women[i].age}</li>
     <li><strong>Département:</strong> ${women[i].department}</li>
     </ul>
-    <button onclick="redirectToDetailsFemale(${i})" class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
+    <button class="btn btn-primary" id="${women[i].id}" data-customid="yourCustomID">Details</button>
+
 `;
             let womenInfos = document.getElementById("womeninfos");
             womenInfos.appendChild(womenCard);
