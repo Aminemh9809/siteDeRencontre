@@ -484,3 +484,24 @@ genderDiv.addEventListener("change", function () {
 // document.cookie =  interest= `${interest};`
 // document.cookie =  description= `${description};`
 // document.cookie =  age= `${age};`
+
+
+// function getCookie (cgu){
+//     const cookie = document.cookie.split(";");
+//     const value = cookie .find(cookie => cookie.startsWith(cgu)) ?.split ("=")[1]
+//     if(value === undefined){
+//         return null;
+        
+//     }
+//     return decodeURI(value)
+// }
+
+// function getCookieA (adult){
+//     const cookie = document.cookie.split(";");
+//     const value = cookie .find(cookie => cookie.startsWith(adult)) ?.split ("=")[1]
+//     if(value === undefined){
+//         return null;
+        
+//     }
+//     return decodeURI(value)
+// }

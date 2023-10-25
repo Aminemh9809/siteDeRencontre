@@ -1,6 +1,6 @@
 
 
-let meninfos = document.getElementById("meninfos");
+let meninfos = document.getElementById(meninfos);
 let paremUrl = new  URLSearchParams(window.location.search)
 console.log(paremUrl)
 
