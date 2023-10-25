@@ -478,38 +478,6 @@ genderDiv.addEventListener("change", function () {
     filter();
 })
 
-<<<<<<< HEAD
-// document.cookie = id= `${id};`
-// document.cookie = name= `${name};`
-// document.cookie =  gender= `${gender};`
-// document.cookie = photo= `${photo};`
-// document.cookie = age= `${age};`
-// document.cookie = department= `${department};`
-// document.cookie =  interest= `${interest};`
-// document.cookie =  description= `${description};`
-// document.cookie =  age= `${age};`
-
-
-// function getCookie (cgu){
-//     const cookie = document.cookie.split(";");
-//     const value = cookie .find(cookie => cookie.startsWith(cgu)) ?.split ("=")[1]
-//     if(value === undefined){
-//         return null;
-        
-//     }
-//     return decodeURI(value)
-// }
-
-// function getCookieA (adult){
-//     const cookie = document.cookie.split(";");
-//     const value = cookie .find(cookie => cookie.startsWith(adult)) ?.split ("=")[1]
-//     if(value === undefined){
-//         return null;
-        
-//     }
-//     return decodeURI(value)
-// }
-=======
 
 function redirectToDetailsPage(index) {
     const id = index.id;
@@ -519,4 +487,3 @@ function redirectToDetailsPage(index) {
 //     const id = indexF.id;
 //     window.location.href = `profil.html?index=${indexF}`;
 // }
->>>>>>> 4b43bbd9a20857955ebda0fa6f99e52eae841548

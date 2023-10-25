@@ -22,13 +22,8 @@ class information {
     }
 }
 
-<<<<<<< HEAD
-let meninfos = document.getElementById(meninfos);
-let paremUrl = new  URLSearchParams(window.location.search)
-=======
 let meninfos = document.getElementById("meninfos");
 let paremUrl = new URLSearchParams(window.location.search)
->>>>>>> 4b43bbd9a20857955ebda0fa6f99e52eae841548
 console.log(paremUrl)
 
 // SearchParams(window.location.search)
