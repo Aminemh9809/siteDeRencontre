@@ -66,34 +66,26 @@ let women = [women1, women2, women3, women4, women5, women6, women7, women8, wom
 let men = [men1, men2, men3, men4, men5, men6, men7, men8, men9, men10, men11, men12]
 
 
-let createElement = {
-    createCard() {
-        for (let i = 0; i < men.length; i++) {
-            let card = document.createElement("div")
-            card.classList.add("card")
-            card.innerHTML =
-                `
-                <h2 class="mb-3">${men[i].name}</h2>
-                <img src="assets/images/${men[i].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle"> <!-- Added Bootstrap classes -->
-                <ul class="list-unstyled">
-                    <li><strong>Genre:</strong> ${men[i].gender}</li>
-                    <li><strong>Age:</strong> ${men[i].age}</li>
-                    <li><strong>Département:</strong> ${men[i].department}</li>
-                    <li><strong>Intérêt:</strong> ${men[i].interest}</li>
-                    <li><strong>Description:</strong> ${men[i].description}</li>
-                    <li><strong>Je cherche des:</strong> ${men[i].search}</li>
-                </ul>
-            `;
+// men
+const urlParams = new URLSearchParams(window.location.search);
+const index = urlParams.get('index');
+// women
+// const indexF = urlParams.get('indexF');
 
-
-            let infos = document.getElementById('infos');
-            infos.appendChild(card);
-        }
-    }
-};
-
-createElement.createCard(); // Call the function to create the cards
-
-
-
-
+let card = document.createElement("div")
+card.classList.add("card")
+card.innerHTML =
+    `
+        <h2 class="mb-3">${men[index].name}</h2>
+        <img src="assets/images/${men[index].photo}" alt="Logo" style="max-width: 230px;" class="mb-3 img-fluid rounded-circle"> <!-- Added Bootstrap classes -->
+        <ul class="list-unstyled">
+            <li><strong>Genre:</strong> ${men[index].gender}</li>
+            <li><strong>Age:</strong> ${men[index].age}</li>
+            <li><strong>Département:</strong> ${men[index].department}</li>
+            <li><strong>Intérêt:</strong> ${men[index].interest}</li>
+            <li><strong>Description:</strong> ${men[index].description}</li>
+            <li><strong>Je cherche des:</strong> ${men[index].search}</li>
+        </ul>
+    `;
+let infos = document.getElementById('infos');
+infos.appendChild(card);
